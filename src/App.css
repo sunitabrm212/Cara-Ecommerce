@@ -1,38 +1,224 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+.navBar{
+  padding: 20px 80px;
+  background-color: #E3E6F3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navItems{
+  display: flex;
+  
+}
+
+.navItems li{
+  list-style: none;
+  margin-right: 25px;
+}
+
+.navItems li a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  position: relative;
+}
+
+.navItems li a:hover,
+.navItems li a.active{
+  color: #088178;
+}
+
+.navItems li a.active::after, 
+.navItems li a:hover::after{
+content: '';
+width: 50%;
+height: 2.5px;
+background-color: #088178;
+position: absolute;
+bottom: -4px;
+left: 1px;
+}
+
+.heroSection{
+  height: 90vh;
+  background-image: url('img/hero4.png');
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.heroSection h4{
+  font-size: 1.1rem;
+}
+
+.heroSection h1{
+  color:#088178;
+}
+
+.heroSection button{
+  background-image: url('img/button.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  color:#088178;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+}
+
+/* Feature Section */
+
+.feature-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 80px;
+}
+
+.feature-item{
+  width: 180px;
+  border: 1px solid #cce7d0;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 4px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+}
+
+.feature-item:hover{
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.feature-item img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.feature-item h6{
+  display: inline-block;
+  background-color: #fddde4;
+  padding: 8px 10px;
+  border-radius: 4px;
+  color: #088178;
+  
+}
+
+.feature-item:nth-child(2) h6{
+  background-color: #cdebbc;;
+}
+
+.feature-item:nth-child(3) h6{
+  background-color: #d1e8f2;;
+}
+
+.feature-item:nth-child(4) h6{
+  background-color: #cdd4f8;
+}
+
+.feature-item:nth-child(5) h6{
+  background-color: #f5dbf6;
+}
+
+.feature-item:nth-child(6) h6{
+  background-color: #fff2e5;
+}
+
+/* Featured Products */
+
+.product1{
+  padding: 40px 80px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.product1 .product-item{
+  width: 23%;
+  min-height: 250px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  padding: 10px 12px;
+  margin: 15px 0;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  position: relative;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product1 .product-item:hover{
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product-item img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.product-item .product-desc{
+  text-align: start;
+  margin-top: 15px;
+}
+
+.product-desc span{
+  font-size: 0.8rem;
+  color: #606063;
+}
+
+.product-desc h5{
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  margin-top: 7px;
+}
+
+.product-desc .ratings .icon{
+  font-size: 0.8rem;
+  margin-top: 7px;
+  color: rgba(243, 181, 25);
+}
+
+.product-desc h4{
+  font-size: 0.95rem;
+  margin-top: 7px;
+  color: #088178;
+}
+
+.product-item .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #cce7d0;
+  color: #088178;
+  background-color: #e8f6ea;
+  font-weight: 700;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
 }
