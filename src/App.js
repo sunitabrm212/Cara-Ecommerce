@@ -7,6 +7,7 @@ import Product2 from './Product2';
 import SmBanner1 from './SmBanner1';
 import SmBanner2 from './SmBanner2';
 import Banner2 from './Banner2';
+import Footer from './Footer';
 import './App.css';
 
 
@@ -22,6 +23,7 @@ function App() {
       <SmBanner1 />
       <SmBanner2 />
       <Banner2 />
+      <Footer />
     </div>
   );
 }

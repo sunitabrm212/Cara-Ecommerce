@@ -465,7 +465,7 @@ left: 1px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 40px 0;
+  margin: 40px 0 20px 0;
 }
 
 .banner2 h2{
@@ -514,4 +514,87 @@ left: 1px;
   font-size: 0.8rem;
   font-weight: 600;
   padding: 10px 15px;
+}
+
+/* Footer */
+
+.footer{
+  padding: 40px 80px;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-container .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+.footer-container .col .logo{
+  margin-bottom: 15px;
+}
+
+.footer-container .col h4{
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.col p{
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.col .social-media h4{
+  margin: 10px 0;
+}
+
+.col .social-icon{
+  display: flex;
+  gap: 11px;
+  font-size: 1.15rem;
+}
+
+.col .social-icon svg:hover{
+  color:#088178;
+  cursor: pointer;
+}
+
+.col a{
+  text-decoration: none;
+  margin-bottom: 9px;
+  color: #222;
+  font-size: 0.9rem;
+}
+
+.col a:hover{
+  color:#088178;
+}
+
+.col .app-image{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+.col .app-image img{
+  border: 1.5px solid #088178;
+  border-radius: 6px;
+}
+
+/* copyright */
+.footer .copyright{
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.footer .copyright p{
+  font-size: 0.9rem;
 }
