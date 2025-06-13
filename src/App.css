@@ -19,17 +19,21 @@
     z-index: 999;
 }
 
-.navItems{
+#close{
+    display: none;
+  }
+
+#navItems{
   display: flex;
   
 }
 
-.navItems li{
+#navItems li{
   list-style: none;
   margin-right: 25px;
 }
 
-.navItems li a{
+#navItems li a{
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
@@ -37,13 +41,13 @@
   position: relative;
 }
 
-.navItems li a:hover,
-.navItems li a.active{
+#navItems li a:hover,
+#navItems li a.active{
   color: #088178;
 }
 
-.navItems li a.active::after, 
-.navItems li a:hover::after{
+#navItems li a.active::after, 
+#navItems li a:hover::after{
 content: '';
 width: 50%;
 height: 2.5px;
@@ -53,6 +57,11 @@ bottom: -4px;
 left: 1px;
 }
 
+.hamburger{
+  display: none;
+}
+
+/* Hero Section */
 .heroSection{
   height: 90vh;
   background-image: url('img/hero4.png');
@@ -525,6 +534,7 @@ left: 1px;
 .footer-container{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-container .col{
@@ -597,4 +607,294 @@ left: 1px;
 
 .footer .copyright p{
   font-size: 0.9rem;
+}
+
+/* Responsive */
+@media(max-width: 799px){
+  #navItems {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #E3E6F3;
+    box-shadow: -20px 0 30px rgba(0, 0, 0, 0.03);
+    padding: 80px 0 0 30px;
+    transition: 0.3s ease;
+  }
+  #navItems li {
+    margin-bottom: 25px;
+  }
+  
+  #navItems li  a{
+    font-size: 1.2rem;
+  }
+
+  #navItems.show{
+    right: 0;
+  }
+
+  #close{
+    display: flex;
+    font-size: 1.5rem;
+    color: #222;
+    position: absolute;
+    top: 30px;
+  }
+
+  .hamburger{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+  }
+
+  .heroSection {
+    height: 90vh;
+    background-position: top 30% right 30%;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .feature-container {
+    padding: 40px 40px;
+    justify-content: center;
+
+  }
+  .feature-item {
+    margin: 15px 15px
+  }
+
+  .product1 {
+    padding: 40px 40px;
+  }
+
+  .product1 .product-item {
+    width: 48%;
+    margin: 15px 0;
+
+  }
+
+  .banner1 {
+    height: 20vh;
+    margin: 20px 0;
+  }
+
+  .banner1 h1 {
+    font-size: 1.7rem;
+  }
+
+  .banner1 button {
+    padding: 10px 15px;
+  }
+
+  .product2 {
+    padding: 40px 40px; 
+  }
+
+  .product2-container .product2-item {
+    width: 48%;
+ 
+  }
+
+  .sm-banner1 {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .sm-banner1-item {
+
+    min-width: 100%;
+    height: 30vh;
+    margin: 0 0 20px 0;
+  }
+
+  .sm-banner2 {
+    padding: 0 40px 20px 40px;
+  }
+
+  .sm-banner2-item {
+    width: 30%;
+  }
+
+  .banner2 {
+    height: 20vh;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .banner2-form {
+    width: 70%;
+  }
+
+  .footer {
+    padding: 40px 40px 20px 40px;
+  }
+
+  .footer-container {
+  gap: 35px;
+  }
+
+  .footer .copyright {
+    height: 5vh;
+    margin-top: 20px;
+  }
+
+  .footer .copyright p {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 499px){
+  .navBar {
+    padding: 20px 20px;
+  }
+
+  .heroSection {
+    height: 70vh;
+    background-position: top 55% right 40%;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .heroSection h2{
+    font-size: 1.2rem;
+  }
+
+  .heroSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .feature-container {
+    padding: 40px 20px;
+    justify-content: space-between;
+  }
+
+  .feature-item {
+    width: 155px;
+    margin: 15px 0;
+  }
+
+  .product1 {
+    padding: 20px 20px;
+  }
+
+  .product1 h1 {
+    font-size: 1.5rem;
+  }
+  .product1 p{
+    font-size: 0.9rem;
+  }
+
+  .product1 .product-item {
+    width: 100%;
+    margin: 15px 0;
+  }
+  
+  .banner1 {
+    height: 30vh;
+  }
+
+  .banner1 h1 {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .product2 {
+    padding: 40px 20px;
+  }
+
+  .product2 h1 {
+    font-size: 1.5rem;
+  }
+
+ .product2 p{
+    font-size: 0.9rem;
+  }
+
+  .product2-container .product2-item {
+    width: 100%;
+  }
+
+  .sm-banner1 {
+    padding: 20px 20px 0 20px;
+
+  }
+
+  .sm-banner1-item {
+    height: 40vh;
+  }
+
+  .sm-banner2 {
+    padding: 0 20px 20px 20px;
+  }
+
+  .sm-banner2-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .banner2 {
+    height: 30vh;
+    padding: 20px 20px;
+    gap: 25px;
+    margin-top: 20px;
+  }
+
+  .banner2 h2 {
+    font-size: 1.3rem;
+  }
+
+  .banner2 p {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  .banner2-form {
+    width: 100%;
+  }
+
+  .banner2-form button {
+    width: 30%;
+  }
+
+  .footer {
+    padding: 20px 20px;
+  }
+
+  .footer-container{
+    gap: 25px;
+  }
+
+  .footer-container .col {
+   width: 100%;
+  }
+
+  .footer .copyright {
+    height: 7vh;
+    margin-top: 10px;
+  }
+
+  .footer .copyright p {
+    font-size: 0.9rem;
+  }
+
 }
