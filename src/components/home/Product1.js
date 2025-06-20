@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
-import fp1 from './img/products/fp1.jpg';
-import fp2 from './img/products/fp2.jpg';
-import fp3 from './img/products/fp3.jpg';
-import fp4 from './img/products/fp4.jpg';
-import fp5 from './img/products/fp5.jpg';
-import fp6 from './img/products/fp6.jpg';
-import fp7 from './img/products/fp7.jpg';
-import fp8 from './img/products/fp8.jpg';
+import fp1 from '../../assets/img/products/fp1.jpg';
+import fp2 from '../../assets/img/products/fp2.jpg';
+import fp3 from '../../assets/img/products/fp3.jpg';
+import fp4 from '../../assets/img/products/fp4.jpg';
+import fp5 from '../../assets/img/products/fp5.jpg';
+import fp6 from '../../assets/img/products/fp6.jpg';
+import fp7 from '../../assets/img/products/fp7.jpg';
+import fp8 from '../../assets/img/products/fp8.jpg';
 
 const featuredProducts = [
     {img: fp1, brand: "adidas", title: "Cartoon Astronaut T-Shirts", price: "$78"},

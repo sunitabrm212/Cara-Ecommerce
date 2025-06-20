@@ -1,30 +1,26 @@
-import Nav from './Nav';
-import HeroSection from './HeroSection';
-import Feature from './Feature';
-import Product1 from './Product1';
-import Banner1 from './Banner1';
-import Product2 from './Product2';
-import SmBanner1 from './SmBanner1';
-import SmBanner2 from './SmBanner2';
-import Banner2 from './Banner2';
-import Footer from './Footer';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import Blog from './pages/Blog';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import NoPage from './pages/NoPage';
 import './App.css';
 
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <HeroSection />
-      <Feature />
-      <Product1 />
-      <Banner1 />
-      <Product2 />
-      <SmBanner1 />
-      <SmBanner2 />
-      <Banner2 />
-      <Footer />
-    </div>
+      <Routes>
+        <Route path = "/" element = {<Layout />}>
+          <Route index element = {<Home />} />
+          <Route path = "shop" element = {<Shop />} />
+          <Route path = "blog" element = {<Blog />} />
+          <Route path = "about" element = {<About />} />
+          <Route path = "contact" element = {<Contact />} />
+          <Route path = '*' element = {<NoPage />} />
+        </Route>
+      </Routes>
   );
 }
 

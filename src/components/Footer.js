@@ -1,7 +1,7 @@
-import app from './img/pay/app.jpg';
-import play from './img/pay/play.jpg';
-import pay from './img/pay/pay.png';
-import logo from './img/logo.png';
+import app from '../assets/img/pay/app.jpg';
+import play from '../assets/img/pay/play.jpg';
+import pay from '../assets/img/pay/pay.png';
+import logo from '../assets/img/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 

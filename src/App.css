@@ -108,6 +108,7 @@ left: 1px;
 
 .feature-item{
   width: 180px;
+  height: auto;
   border: 1px solid #cce7d0;
   text-align: center;
   padding: 25px 15px;

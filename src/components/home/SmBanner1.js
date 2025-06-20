@@ -1,5 +1,5 @@
-import bg1 from './img/banner/b17.jpg';
-import bg2 from './img/banner/b10.jpg';
+import bg1 from '../../assets/img/banner/b17.jpg';
+import bg2 from '../../assets/img/banner/b10.jpg';
 
 const offers = [
     {img: bg1, heading: "crazy deals", subheading: "buy 1 get 1 free", description: "The best classic dress is on sale at cara", btn : 'Learn More'},

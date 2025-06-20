@@ -1,6 +1,6 @@
-import b3 from './img/banner/b7.jpg';
-import b4 from './img/banner/b4.jpg';
-import b5 from './img/banner/b18.jpg';
+import b3 from '../../assets/img/banner/b7.jpg';
+import b4 from '../../assets/img/banner/b4.jpg';
+import b5 from '../../assets/img/banner/b18.jpg';
 
 const banners = [
     {img: b3, heading: "SEASONAL SALE", subheading: "Winter Collection - 50% OFF"},

@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
-import n1 from './img/products/n1.jpg';
-import n2 from './img/products/n2.jpg';
-import n3 from './img/products/n3.jpg';
-import n4 from './img/products/n4.jpg';
-import n5 from './img/products/n5.jpg';
-import n6 from './img/products/n6.jpg';
-import n7 from './img/products/n7.jpg';
-import n8 from './img/products/n8.jpg';
+import n1 from '../../assets/img/products/n1.jpg';
+import n2 from '../../assets/img/products/n2.jpg';
+import n3 from '../../assets/img/products/n3.jpg';
+import n4 from '../../assets/img/products/n4.jpg';
+import n5 from '../../assets/img/products/n5.jpg';
+import n6 from '../../assets/img/products/n6.jpg';
+import n7 from '../../assets/img/products/n7.jpg';
+import n8 from '../../assets/img/products/n8.jpg';
 
 
 
